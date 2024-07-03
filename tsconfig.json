@@ -35,7 +35,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/api/pass/[passId].js"  ],
   "exclude": [
     "node_modules"
   ]

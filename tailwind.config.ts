@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        titre: "Space Grotesk",
+        paragraph: "Ubuntu",
+      },
+      colors: {
+        purple: "#6a3aee",
+      },
+    
     },
   },
   plugins: [],

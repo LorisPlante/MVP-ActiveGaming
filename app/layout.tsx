@@ -3,7 +3,7 @@
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { NextAuthProvider } from "../app/Providers";
+import { NextAuthProvider } from "./Providers";
 import { ReactNode } from "react"; // Import ReactNode type
 
 const inter = Inter({ subsets: ["latin"] });
