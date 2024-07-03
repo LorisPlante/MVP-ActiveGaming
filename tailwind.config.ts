@@ -19,6 +19,8 @@ const config: Config = {
       },
       colors: {
         purple: "#6a3aee",
+        bg: "#161616",
+        card: "#1C1C1C",
       },
     
     },

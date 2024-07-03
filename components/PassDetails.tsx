@@ -30,11 +30,26 @@ const PassDetails: React.FC<PassDetailsProps> = ({ selectedId }) => {
 
   const selectedBattlePass = battlePasses.find(pass => pass._id === selectedId);
 
+  const handleBuyPass = () => {
+    // Marquer le pass comme acheté (mettre à jour en fonction de votre logique)
+    const updatedPasses = battlePasses.map(pass => {
+      if (pass._id === selectedId) {
+        return { ...pass, isPurchased: true };
+      }
+      return pass;
+    });
+    setBattlePasses(updatedPasses);
+    // Redirection vers la page principale après l'achat
+    window.location.href = '/home'; // ou utilisez Next.js Router pour une navigation plus fluide
+  };
+
   return (
     <div className="absolute inset-0 w-full h-full flex flex-col items-center bg-[#1C1C1C]">
       <div className="flex flex-col items-center w-full max-w-screen-lg px-4 py-8">
         <div className="w-12 h-8 flex-shrink-0 mb-4">
-          <Image src="/icon1.png" alt="Logo" width={46.406} height={33} />
+          {selectedBattlePass && (
+            <Image src={selectedBattlePass.icon} alt="Logo" width={46.406} height={33} />
+          )}
         </div>
         {selectedBattlePass && (
           <>
@@ -100,6 +115,14 @@ const PassDetails: React.FC<PassDetailsProps> = ({ selectedId }) => {
                   </div>
                 )}
               </div>
+            </div>
+            <div className="mb-6">
+              <button
+                className="border-2 border-[#583DFF] bg-[#583DFF] hover:bg-purple-700 text-white font-space-grotesk font-semibold py-2 px-6 rounded-lg focus:outline-none"
+                onClick={handleBuyPass}
+              >
+                Acheter
+              </button>
             </div>
           </>
         )}

@@ -14,6 +14,7 @@ export interface BattlePass {
   Defis_img2: string;
   Defis_text1: string;
   Defis_text2: string;
+  acheter: number;
   }
   export interface BattlePassDetails {
     _id: string;

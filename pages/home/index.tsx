@@ -50,6 +50,9 @@ const PassDeCombat = () => {
                     <div className="font-medium">
                       ${pass.price}
                     </div>
+                    {pass.acheter && (
+                      <div className="text-green-500 mt-2">Acheté</div>
+                    )}
                   </div>
                 </div>
               </Link>

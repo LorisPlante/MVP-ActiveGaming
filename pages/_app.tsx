@@ -1,5 +1,5 @@
 // pages/_app.tsx
-
+import "@/app/globals.css";
 import { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
 import 'tailwindcss/tailwind.css'; // Importez le fichier de styles Tailwind CSS
@@ -9,7 +9,7 @@ import SignOutBtn from '../components/SignOutBtn'; // Assurez-vous que c'est bie
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SessionProvider session={pageProps.session}>
-      <div className="bg-gray-900 min-h-screen flex flex-col">
+      <div className="bg-bg min-h-screen flex flex-col">
        
         <Component {...pageProps} />
       
