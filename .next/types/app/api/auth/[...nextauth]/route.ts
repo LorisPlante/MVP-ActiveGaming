@@ -1,4 +1,4 @@
-// File: /Users/mouelhioumayma/Desktop/MVP/MVP-ActiveGaming/app/api/auth/[...nextauth]/route.js
+// File: /Users/lorisplante/Downloads/MVP-last-update/MVP-ActiveGaming/app/api/auth/[...nextauth]/route.js
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 

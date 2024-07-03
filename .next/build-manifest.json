@@ -30,20 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/home.js"
     ],
-    "/onboarding": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/onboarding.js"
-    ],
     "/pass/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/pass/[id].js"
-    ],
-    "/user": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/user.js"
     ]
   },
   "ampFirstPages": []

@@ -1,4 +1,4 @@
-// File: /Users/mouelhioumayma/Desktop/MVP/MVP-ActiveGaming/app/api/battlepasses/route.js
+// File: /Users/lorisplante/Downloads/MVP-last-update/MVP-ActiveGaming/app/api/battlepasses/route.js
 import * as entry from '../../../../../app/api/battlepasses/route.js'
 import type { NextRequest } from 'next/server.js'
 

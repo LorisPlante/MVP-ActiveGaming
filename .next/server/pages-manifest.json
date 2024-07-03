@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/home": "pages/home.js",
-  "/pass/[id]": "pages/pass/[id].js",
   "/user": "pages/user.js",
-  "/onboarding": "pages/onboarding.js"
+  "/pass/[id]": "pages/pass/[id].js"
 }
